@@ -34,7 +34,12 @@ public class Computer {
     public double getPrice() {
         return price;
     }
-        
+
+    @Override
+    public String toString() {
+        return "Computer [brand=" + brand + ", memory=" + memory + ", processor=" + processor + ", operatingSystem="
+                + operatingSystem + ", price=" + price + "]";
+    }  
     }
 
 
