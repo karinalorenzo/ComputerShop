@@ -24,6 +24,16 @@ public class Store {
         return computers.removeIf(c -> c.getBrand().equalsIgnoreCase(brand));
     }
 
+    public List<Computer> searchComputerByBrand(String brand) {
+        List<Computer> result = new ArrayList<>();
+        for (Computer c : computers) {
+            if (c.getBrand().equalsIgnoreCase(brand)) {
+                result.add(c);
+            }
+        }
+        return result;
+    }
+
     public List<Computer> listComputers() {
         return new ArrayList<>(computers);
     }

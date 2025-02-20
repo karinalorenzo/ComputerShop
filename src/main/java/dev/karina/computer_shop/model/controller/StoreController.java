@@ -20,6 +20,11 @@ public class StoreController {
         return store.deleteComputerByBrand(brand);
     }
 
+    public  List<Computer> searchComputerByBrand(String brand) {
+        return store.searchComputerByBrand(brand);
+        
+    }
+
     public List<Computer> listComputers() {
         return store.listComputers();
     }

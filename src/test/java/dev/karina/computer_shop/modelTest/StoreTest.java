@@ -51,6 +51,5 @@ public class StoreTest {
         List<Computer> foundComputers = controller.searchComputerByBrand("Dell Precission");
         assertEquals(1, foundComputers.size());
         assertEquals("Dell Precission", foundComputers.get(0).getBrand());
-
     }
 }
