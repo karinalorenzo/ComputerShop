@@ -7,9 +7,9 @@ import java.util.List;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import dev.karina.computer_shop.controller.StoreController;
 import dev.karina.computer_shop.model.Computer;
 import dev.karina.computer_shop.model.Store;
-import dev.karina.computer_shop.model.controller.StoreController;
 
 public class StoreTest {
     private Store store;
