@@ -22,6 +22,13 @@ public class StoreTest {
     }
 
     @Test
+    void testStoreAttributes() {
+        assertEquals("Computer Store", store.getName());
+        assertEquals("Jeremih Reyes", store.getOwner());
+        assertEquals("0123453M", store.getTaxId());
+    }
+
+    @Test
     void testAddComputer() {
         Computer computer = new Computer("MacBook Pro", 16, "Intel Core i7", "MacOs Monterey", 700);
         controller.addComputer(computer);
@@ -54,7 +61,7 @@ public class StoreTest {
     }
 
     @Test
-    void testListComputers(){
+    void testListComputers() {
         controller.addComputer(new Computer("MacBook Pro", 16, "Chip M2", "MacOs Ventura", 1800));
         controller.addComputer(new Computer("iMac", 16, "Chip M4", "MacOs Sononma", 1800));
 
@@ -62,4 +69,3 @@ public class StoreTest {
         assertEquals(2, computers.size());
     }
 }
-
