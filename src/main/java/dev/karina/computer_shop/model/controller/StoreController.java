@@ -16,6 +16,10 @@ public class StoreController {
         store.addComputer(computer);
     }
 
+    public boolean deleteComputerByBrand(String brand){
+        return store.deleteComputerByBrand(brand);
+    }
+
        public List<Computer> listComputers(){
                return store.listComputers();
     }

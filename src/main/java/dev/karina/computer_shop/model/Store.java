@@ -20,6 +20,10 @@ public class Store {
         computers.add(computer);
     }
 
+    public boolean deleteComputerByBrand(String brand){
+        return computers.removeIf(c -> c.getBrand().equalsIgnoreCase(brand));
+    }
+
     public List<Computer> listComputers(){
         return new ArrayList<>(computers);
     }
