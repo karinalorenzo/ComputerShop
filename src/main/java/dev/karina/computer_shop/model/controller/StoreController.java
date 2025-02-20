@@ -8,7 +8,7 @@ import dev.karina.computer_shop.model.Store;
 public class StoreController {
     private Store store;
 
-    public StoreController(Store store){
+    public StoreController(Store store) {
         this.store = store;
     }
 
@@ -16,12 +16,12 @@ public class StoreController {
         store.addComputer(computer);
     }
 
-    public boolean deleteComputerByBrand(String brand){
+    public boolean deleteComputerByBrand(String brand) {
         return store.deleteComputerByBrand(brand);
     }
 
-       public List<Computer> listComputers(){
-               return store.listComputers();
+    public List<Computer> listComputers() {
+        return store.listComputers();
     }
-  
+
 }

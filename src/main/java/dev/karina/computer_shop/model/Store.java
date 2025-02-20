@@ -9,7 +9,7 @@ public class Store {
     private String taxId;
     private List<Computer> computers;
 
-    public  Store(String name, String owner, String taxId) {
+    public Store(String name, String owner, String taxId) {
         this.name = name;
         this.owner = owner;
         this.taxId = taxId;
@@ -20,11 +20,11 @@ public class Store {
         computers.add(computer);
     }
 
-    public boolean deleteComputerByBrand(String brand){
+    public boolean deleteComputerByBrand(String brand) {
         return computers.removeIf(c -> c.getBrand().equalsIgnoreCase(brand));
     }
 
-    public List<Computer> listComputers(){
+    public List<Computer> listComputers() {
         return new ArrayList<>(computers);
     }
 }

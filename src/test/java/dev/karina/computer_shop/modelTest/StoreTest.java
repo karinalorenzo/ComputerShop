@@ -31,7 +31,7 @@ public class StoreTest {
         assertEquals("MacBook Pro", computers.get(0).getBrand());
     }
 
-    @Test 
+    @Test
     void testDeleteComputerByBrand() {
         Computer computer1 = new Computer("MacBook Pro 14", 24, "Chip M4", "MacOs Ventura", 2449);
         Computer computer2 = new Computer("MacBook Pro 16", 24, "Chip M6", "MacOs Ventura", 2949);
@@ -41,5 +41,16 @@ public class StoreTest {
         boolean removed = controller.deleteComputerByBrand("MacBook Pro 14");
         assertTrue(removed);
         assertEquals(1, controller.listComputers().size());
+    }
+
+    @Test
+    void testSearchComputerByBrand() {
+        Computer computer1 = new Computer("Dell Precission", 16, "Intel i7", "Windows 10", 1800);
+        controller.addComputer(computer1);
+
+        List<Computer> foundComputers = controller.searchComputerByBrand("Dell Precission");
+        assertEquals(1, foundComputers.size());
+        assertEquals("Dell Precission", foundComputers.get(0).getBrand());
+
     }
 }
