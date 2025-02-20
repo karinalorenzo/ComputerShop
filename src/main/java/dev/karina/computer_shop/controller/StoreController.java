@@ -1,4 +1,4 @@
-package dev.karina.computer_shop.model.controller;
+package dev.karina.computer_shop.controller;
 
 import java.util.List;
 
