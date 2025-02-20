@@ -6,7 +6,7 @@
 ## Status: in progress
 
 ## Project Description
-This project model a computers shop using the  MVC (Model-View-Controller) pattern (witout view). Implement basics functionalities such adding, deleting, searching and listing computers in the store. The development follows the TDD approach to ensure that all functionalities are correctly implemented and tested.
+This project model a computers shop using the  MVC (Model-View-Controller) pattern. Implement basics functionalities such adding, deleting, searching and listing computers in the store. The development follows the TDD approach to ensure that all functionalities are correctly implemented and tested.
 
 ## Prerequisites
 To run this project, you need to have the following installed:
