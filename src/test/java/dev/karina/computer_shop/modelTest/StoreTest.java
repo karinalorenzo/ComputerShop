@@ -52,4 +52,14 @@ public class StoreTest {
         assertEquals(1, foundComputers.size());
         assertEquals("Dell Precission", foundComputers.get(0).getBrand());
     }
+
+    @Test
+    void testListComputers(){
+        controller.addComputer(new Computer("MacBook Pro", 16, "Chip M2", "MacOs Ventura", 1800));
+        controller.addComputer(new Computer("iMac", 16, "Chip M4", "MacOs Sononma", 1800));
+
+        List<Computer> computers = controller.listComputers();
+        assertEquals(2, computers.size());
+    }
 }
+

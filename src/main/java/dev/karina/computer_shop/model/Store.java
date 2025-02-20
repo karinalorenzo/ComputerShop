@@ -26,13 +26,13 @@ public class Store {
 
     public List<Computer> searchComputerByBrand(String brand) {
         List<Computer> result = new ArrayList<>();
-        for (Computer c : computers) {
-            if (c.getBrand().equalsIgnoreCase(brand)) {
+        for (Computer c: computers){
+            if (c.getBrand().equalsIgnoreCase(brand)){
                 result.add(c);
             }
         }
         return result;
-    }
+    }  
 
     public List<Computer> listComputers() {
         return new ArrayList<>(computers);
