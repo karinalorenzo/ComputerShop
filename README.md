@@ -3,7 +3,7 @@
 ## Author
 **Karina Lorenzo**
   
-## Status: in progress
+## Status: DONE 🚀
 
 ## Project Description
 This project model a computers shop using the  MVC (Model-View-Controller) pattern. Implement basics functionalities such adding, deleting, searching and listing computers in the store. The development follows the TDD approach to ensure that all functionalities are correctly implemented and tested.
